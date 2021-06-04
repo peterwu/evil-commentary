@@ -109,7 +109,6 @@ parameter."
 (define-minor-mode evil-commentary-mode
   "Commentary mode."
   :lighter " s-/"
-  :global t
   :keymap (let ((map (make-sparse-keymap)))
             (evil-define-key 'normal map "gc" 'evil-commentary)
             (evil-define-key 'normal map "gy" 'evil-commentary-yank)
